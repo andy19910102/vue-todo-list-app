@@ -1,4 +1,3 @@
-
 body {
     color: black;
     background: rgb(42, 38, 54);
@@ -29,7 +28,7 @@ body {
     -moz-appearance: none;
     appearance: none;
     border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .form-control:focus {
@@ -40,8 +39,10 @@ body {
     box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
 }
 
+$primary: rgb(33, 118, 33);
+
 .btn {
-    background: rgb(21, 89, 225);
+    background: $primary;
     color: white;
     border: none;
     padding: 8px 14px;
@@ -49,10 +50,10 @@ body {
     font-size: 18px;
     cursor: pointer;
     transition: all .3s ease;
-}
 
-.btn:hover {
-    background: rgb(17, 72, 182);
+    &:hover {
+        background: darken($primary, 5%);
+    }
 }
 
 .card {
@@ -125,4 +126,3 @@ body {
 .box-danger {
     background: rgb(217, 48, 48);
 }
-
